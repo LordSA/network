@@ -1,7 +1,7 @@
 import socket
 import struct
 
-raw_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM, socket.ntohs(3))
+raw_socket = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
 
 print("Capturing.....")
 print("CTRL+c to stop")
