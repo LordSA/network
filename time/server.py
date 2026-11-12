@@ -9,3 +9,4 @@ while True:
     print("recieved", add)
     time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     server.sendto(time.encode(), add)
+    # server.close()
